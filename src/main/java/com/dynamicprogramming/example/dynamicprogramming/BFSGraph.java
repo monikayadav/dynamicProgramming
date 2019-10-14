@@ -2,7 +2,6 @@ package com.dynamicprogramming.example.dynamicprogramming;
 
 import java.util.Iterator;
 import java.util.LinkedList;
-import java.util.Queue;
 
 public class BFSGraph {
 
@@ -14,7 +13,7 @@ public class BFSGraph {
 		V = v;
 		adj = new LinkedList[v];
 		for (int i = 0; i < v; ++i)
-			adj[i] = new LinkedList();
+			adj[i] = new LinkedList<Integer>();
 	}
 
 	// Function to add an edge into the graph
