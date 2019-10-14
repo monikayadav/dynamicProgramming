@@ -48,7 +48,7 @@ class BinaryTree {
 	}
 }
 
-public class zigZagTreeTraversal {
+public class ZigZagTreeTraversal {
 
 	public static void main(String[] args) {
 		BinaryTree tree = new BinaryTree();
