@@ -10,6 +10,14 @@ public class EqualSubsetSumProblem {
 		findEqualSumSet(set);
 	}
 
+	/**
+	 * 				| true								if i==0
+	 * 				| false								if j==0
+	 * DP[i][j] = 	| dp[i][j-1]						if i-set[j-1] < 0
+	 * 				| dp[i][j-1] || dp[i-set[j-1]][j-1]	if i-set[j-1] >= 0
+	 * 
+	 * @param set
+	 */
 	private static void findEqualSumSet(int[] set) {
 		int sum = 0;
 		for (int i = 0; i < set.length; i++) {
@@ -37,10 +45,6 @@ public class EqualSubsetSumProblem {
 				}
 			}
 		}
-		/**
-		 * for (int i = 0; i <= halfSum; i++) { for (int j = 0; j <= set.length; j++)
-		 * System.out.print(dp[i][j] + " "); System.out.println(); }
-		 **/
 
 		List<Integer> set1 = new ArrayList<Integer>();
 		List<Integer> set2 = new ArrayList<Integer>();
