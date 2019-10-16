@@ -2,7 +2,7 @@ package com.dynamicprogramming.example.dynamicprogramming;
 
 public class WordPresentAsSubSequence {
 	public static void main(String[] args) {
-		String x = "ABCBDAB";
+		String x = "XABCBDAB";
 		String y = "ACAB";
 		System.out.print(y + "is present as subsequence : " + findSubSequence(x, y, x.length(), y.length()));
 	}
